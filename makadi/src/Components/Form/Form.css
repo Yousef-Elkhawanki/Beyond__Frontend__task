@@ -1,0 +1,101 @@
+.booking__form {
+    background: #EDEDED80 50%;
+}
+
+.booking__form__img {
+    background: url(https://s3-alpha-sig.figma.com/img/1769/e7f3/47add2e6cf990fefbe7fa8565227f911?Expires=1692576000&Signature=B4XXYUPODMJ4YJv6IvBKlqayWVebFuuktsVOe1ubsKu1lflQENUpYRh~2M4OAlaECx5QiyjwjhTIDzpqDPCJH78oegMiCvwXGF1qgCb6o7GtKm7jJkZO8qbOHoIoMGD8H71NiRPtcHWDO1DV~x2P7KK3l7SkzQw53CsMs-gfyowa-lTL9~WBH-r7LywKGnab1tw5QtQmoq5AD5L8i7tUwYHPOFuwzPwldMGZrZCw9av-7BwZRkJS9yWUJ8l1Z4vxxC4J4zZXE-RFHDdpYBsVF-66bWEm~hvFSfFlr8O5hxthFpb6YF-zbifqrrxZVT06T1rSdPMhQuQ06jAVzM7gQA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4) no-repeat calc(-150px);
+    background-size: cover;
+    min-height:70vh;
+}
+.booking__form__img__text {
+    position: absolute;
+    right: 1rem;
+    top: -20%;
+    transform: translateY(-50%);
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    color: var(--primary);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.booking__form__img__text h3 {
+    font-size: 3rem;
+    margin: .2rem 0;
+    font-weight: bold;
+}
+.booking__form__img__text h6{
+    font-weight: bold;
+    margin: 0;
+}
+.booking__gorm__container__description p {
+    font-weight: bold;
+}
+
+.booking__gorm__container__description {
+    color: var(--primary);
+    margin-bottom: var(--spacing);
+}
+
+label {
+    color: var(--gray);
+}
+
+.form{
+    width: 100%;
+    border: 0;
+    border-bottom: .01rem solid rgba(100, 100, 100 ,.3);
+    margin: 1rem 0;
+    padding: .4rem 0;
+    background: transparent;
+}
+input[type="checkbox"]{
+    margin: 1rem 0;
+    margin-right: 1rem;
+    padding: .4rem 0;
+
+}
+ option:first-of-type{
+    color: var(--gray);
+}
+.form:focus {
+    outline: 0;
+    border: 0;
+}
+input[type="submit"]{
+    background: var(--primary);
+    color: var(--white);
+    border: 0;
+    padding: .4rem 1rem;
+    /* font-weight: lighter; */
+}
+
+
+
+.toast:not(.show) {
+    display: block !important;
+}
+.toast {
+    color: var(--primary) !important
+;
+font-weight: bold;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width:786px) {
+    .booking__form__img__text {
+        top: -50%;
+    }
+}

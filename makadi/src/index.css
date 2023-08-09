@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Diodrum Arabic";
+  src: url(src/assets/fonts/DiodrumArabic-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Diodrum Arabic";
+  src: url(src/assets/fonts/diodrum-arabic-extralight.ttf) format("truetype");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Diodrum Arabic";
+  src: url(src/assets/fonts/diodrum-arabic-medium.ttf) format("truetype");
+  font-weight: bold;
+}
+:root {
+  --primary:#21436E;
+  --secondary:#268FB4;
+  --white:#fff;
+  --black:#000;
+  --spacing:1.5rem;
+  --transition: .4s;
+  --gray:#757575;
+}
+body {
+  font-family: "Diodrum Arabic" ;
+  color: var(--white);
+  /* font-weight: bold; */
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul {
+  margin-bottom: 0;
+}
+.active__navbar {
+  background: var(--primary);
+}
+h3 ,h2 ,h5 ,h4 {
+  font-weight: bold;
+}
+

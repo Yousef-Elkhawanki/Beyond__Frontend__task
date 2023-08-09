@@ -1,0 +1,65 @@
+.hero {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #21436E 85.42%), linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%), url(https://s3-alpha-sig.figma.com/img/59d9/34ba/beec8b712336762c132808d06d5c278e?Expires=1691971200&Signature=KdgDUQPJPgCk7enZVrActan0VS4VCerE0uKNmpVpK~NHK~JrC6dFxP0Y1MTNLHg2lMXgjqMnObT92J99JOCgJW3wrgWGOzIQqLoz9oY06UiylqLT08wTI9SkzdHzk~~eEEs~7BOn0Ds~D4XvgWxkoieUUW~xyCvtAUt4QgzeDDaq9GRJJxwDGRGYg06CNayu321vsTR7twnHtCraoLmdRYn1hmKdc-4n93dYWV5x23tE4L7JLjJeM3ZlpCtcdMIYYhVclzeDdWh-RcOD21u~rdXBmVgPbaDlG4WfMJDigVE-JreyViOp9uBlgIOvJ4C4Gj1R55VqhNiQtB-FkdsR1w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4), lightgray 50% / cover no-repeat;
+    min-height: 150vh;
+    background-position: center;
+    background-size: cover;
+}
+.hero .container {
+    min-height: 150vh;
+}
+.hero__container__img  {
+    height: 100%;
+}
+.hero__container__img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .row {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    align-items: stretch !important;
+}
+.hero__container__content__text {
+    line-height: 1.5;
+}
+.hero__container__content__text h2  {
+    font-size: 3.5rem ;
+    /* font-weight: bold; */
+    /* line-height: 1.5; */
+}
+.hero__container__content__text h5 {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+.hero__container__content__btns{
+    display: flex;
+    gap: var(--spacing);
+}
+.hero__container__content__btns button {
+    border: 0;
+    padding: .6rem 2rem ;
+    color: var(--primary);
+    font-weight: lighter;
+}
+
+
+@media (max-width:768px) {
+    html {
+        font-size: 60%;
+    }
+    .hero {
+        min-height: 100vh !important;
+    }
+    .hero .container {
+        min-height: 100vh !important;
+    }
+  .hero .row {
+    bottom: 0;
+    padding-top: 100px !important;
+    
+  }
+}
