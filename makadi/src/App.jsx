@@ -30,11 +30,13 @@ export const App = () => {
   }, [setToggleNavbar]);
   return (
     <>
-      <div className="isLoading">
-        <h1>makadi</h1>
-      </div>
       <QueryClientProvider client={query}>
         <Navbar toggleNavbar={toggleNavbar} />
+        <div className="isLoading">
+          <div className="container">
+            <h1>makadi</h1>
+          </div>
+        </div>
         <Hero />
         <Service />
         <Form />

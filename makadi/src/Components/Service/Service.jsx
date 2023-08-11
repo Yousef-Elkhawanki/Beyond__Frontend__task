@@ -227,7 +227,7 @@ export const Service = () => {
           </div>
           <div
             className="col-md-5"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="1000"
           >
             <div className="wrapper">
