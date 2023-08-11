@@ -42,7 +42,12 @@ export const Form = () => {
     <section className="booking__form">
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          <div
+            className="col-md-4"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <div className="booking__form__img position-relative">
               <div className="booking__form__img__text">
                 <h3>Makadi Heights</h3>
@@ -50,7 +55,12 @@ export const Form = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div
+            className="col-md-6"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <div className="booking__form__container py-5 position-relative">
               <div className="booking__gorm__container__description">
                 <p>

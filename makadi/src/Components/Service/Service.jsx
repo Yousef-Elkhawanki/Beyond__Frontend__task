@@ -17,7 +17,7 @@ export const Service = () => {
     <section className="service">
       <div className="container">
         <div className="row justify-content-between align-items-center g-3 py-5">
-          <div className="col-md-6">
+          <div className="col-md-6" data-aos="fade-up" data-aos-duration="1000">
             <div className="service__header">
               <h5>Discover Lifestyle</h5>
               <h3>Amentities</h3>
@@ -27,7 +27,11 @@ export const Service = () => {
               </p>
             </div>
             <div className="services__items">
-              <div className="sevices__items__item">
+              <div
+                className="sevices__items__item"
+                data-aos="flip-left"
+                data-aos-duration="1000"
+              >
                 <div className="sevices__items__item__icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +55,11 @@ export const Service = () => {
                   <p>Downtown Makadi Heights Mall</p>
                 </div>
               </div>
-              <div className="sevices__items__item">
+              <div
+                className="sevices__items__item"
+                data-aos="flip-right"
+                data-aos-duration="1000"
+              >
                 <div className="sevices__items__item__icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +97,11 @@ export const Service = () => {
                   <p>Sports Courts, Fitness Center Water Sports Activities</p>
                 </div>
               </div>
-              <div className="sevices__items__item">
+              <div
+                className="sevices__items__item"
+                data-aos="flip-left"
+                data-aos-duration="1000"
+              >
                 <div className="sevices__items__item__icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +125,11 @@ export const Service = () => {
                   <p>Kids Aqua Park Kids Areas</p>
                 </div>
               </div>
-              <div className="sevices__items__item">
+              <div
+                className="sevices__items__item"
+                data-aos="flip-right"
+                data-aos-duration="1000"
+              >
                 <div className="sevices__items__item__icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +151,11 @@ export const Service = () => {
                   </p>
                 </div>
               </div>
-              <div className="sevices__items__item">
+              <div
+                className="sevices__items__item"
+                data-aos="flip-left"
+                data-aos-duration="1000"
+              >
                 <div className="sevices__items__item__icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +193,11 @@ export const Service = () => {
                   </p>
                 </div>
               </div>
-              <div className="sevices__items__item">
+              <div
+                className="sevices__items__item"
+                data-aos="flip-right"
+                data-aos-duration="1000"
+              >
                 <div className="sevices__items__item__icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +225,11 @@ export const Service = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-5">
+          <div
+            className="col-md-5"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <div className="wrapper">
               <Splide
                 options={{

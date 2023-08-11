@@ -5,7 +5,12 @@ export const Hero = () => {
     <section className="hero ">
       <div className="container position-relative">
         <div className="row g-3 py-5 ">
-          <div className="col-md-6">
+          <div
+            className="col-md-6"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div className="hero__container__img">
               <img
                 className="w-100"
@@ -14,7 +19,12 @@ export const Hero = () => {
               />
             </div>
           </div>
-          <div className="col-md-6">
+          <div
+            className="col-md-6"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div className="hero__container__content">
               <div className="hero__container__content__text">
                 <h5>The place</h5>

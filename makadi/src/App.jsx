@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import "./App.css";
+import $ from "jquery";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Hero } from "./Components/Hero/Hero";
 import { Service } from "./Components/Service/Service";
@@ -19,9 +21,18 @@ export const App = () => {
   }
   useEffect(() => {
     toggleNavbarChange();
+    $(".isLoading h1").fadeOut(2000, () => {
+      $(".isLoading").slideUp(2000, () => {
+        $(".isLoading").remove();
+        $("body").css("overflow", "auto");
+      });
+    });
   }, [setToggleNavbar]);
   return (
     <>
+      <div className="isLoading">
+        <h1>makadi</h1>
+      </div>
       <QueryClientProvider client={query}>
         <Navbar toggleNavbar={toggleNavbar} />
         <Hero />
