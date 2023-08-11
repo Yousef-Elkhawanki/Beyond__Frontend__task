@@ -60,6 +60,7 @@
   .hero .row {
     bottom: 0;
     padding-top: 100px !important;
+    transform: translateX(-48.5%);
     
   }
 }

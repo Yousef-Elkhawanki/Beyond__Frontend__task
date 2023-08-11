@@ -60,35 +60,41 @@ export const Form = () => {
               </div>
 
               {errorList.length > 0
-                ? errorList.map((err ,index) => {
+                ? errorList.map((err, index) => {
                     if (err.context.label === "phone") {
-                      return <div
-                        className="toast align-items-center text-white bg-danger border-0 mb-2"
-                        role="alert"
-                        aria-live="assertive"
-                        aria-atomic="true"
-                      >
-                        <div className="d-flex">
-                          <div className="toast-body">Number Invalid..</div>
+                      return (
+                        <div
+                          key={index}
+                          className="toast align-items-center text-white bg-danger border-0 mb-2"
+                          role="alert"
+                          aria-live="assertive"
+                          aria-atomic="true"
+                        >
+                          <div className="d-flex">
+                            <div className="toast-body">Number Invalid..</div>
+                          </div>
                         </div>
-                      </div>;
+                      );
                     } else {
-                      return <div key={index}
-                        className="toast align-items-center text-white bg-danger border-0 mb-2"
-                        role="alert"
-                        aria-live="assertive"
-                        aria-atomic="true"
-                      >
-                        <div className="d-flex">
-                          <div className="toast-body">{err.message}</div>
+                      return (
+                        <div
+                          key={index}
+                          className="toast align-items-center text-white bg-danger border-0 mb-2"
+                          role="alert"
+                          aria-live="assertive"
+                          aria-atomic="true"
+                        >
+                          <div className="d-flex">
+                            <div className="toast-body">{err.message}</div>
+                          </div>
                         </div>
-                      </div>;
+                      );
                     }
                   })
                 : ""}
               {alert ? (
                 <div
-                  className="toast align-items-center text-white bg-success border-0 mb-2"
+                  className="toast toast__success align-items-center text-white bg-success border-0 mb-2"
                   role="alert"
                   aria-live="assertive"
                   aria-atomic="true"

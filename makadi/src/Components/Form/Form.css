@@ -77,9 +77,14 @@ input[type="submit"]{
     display: block !important;
 }
 .toast {
-    color: var(--primary) !important
-;
+    color: var(--primary) !important;
+    
 font-weight: bold;
+}
+.toast__success  {
+position: absolute;
+top: 12%;
+right: -20%;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -97,5 +102,9 @@ input[type=number] {
 @media (max-width:786px) {
     .booking__form__img__text {
         top: -50%;
+    }
+    .toast {
+        width: 50% !important;
+        right: 0%;
     }
 }

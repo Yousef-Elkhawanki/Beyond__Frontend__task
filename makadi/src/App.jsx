@@ -7,7 +7,6 @@ import { QueryClient, QueryClientProvider } from "react-query";
 
 export const App = () => {
   const query = new QueryClient();
-
   const [toggleNavbar, setToggleNavbar] = useState(false);
   function toggleNavbarChange() {
     window.addEventListener("scroll", () => {
