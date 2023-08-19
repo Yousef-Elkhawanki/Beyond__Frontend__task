@@ -6,17 +6,13 @@ export const Hero = () => {
       <div className="container position-relative">
         <div className="row g-3 py-5 ">
           <div
-            className="col-md-6"
+            className="col-md-5"
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
             <div className="hero__container__img">
-              <img
-                className="w-100"
-                src="https://s3-alpha-sig.figma.com/img/0170/7a2f/cb306e441ce4f545715306f8e51ac6d1?Expires=1691971200&Signature=GJMsPL68hSt3-a93qXmB5ju-f76y5U5zIu9-YzCbzVdmPWK9quL~p0dNdIVXZ-lF2PIUfQNkdLi-PCOsltXUExuXK8BApq18xrlez9--~xKKooxv3MiTJBQQcEojhnbi6O~ERwSIu5t9bgikrtRvWX9sW75HXYgN0LCwxkZwH5ArD5wYVxH7oKdZJ-K~na~hZJ49qdLqmW5Y0eTaUIRMqu0KMyvq9Ddb5nOVNrZVo4hprOCltUCV-udV9OXGNupD6dTKybHdT0XuBJJJzi9bdISjgzRVYlJILlyw6AwCFE-PQE8f-BOTgBX3-GJe-Ml5fvBCbvI4xK84hLcs1CvBYA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt=""
-              />
+              <img className="w-100" src="src/assets/home.png" alt="" />
             </div>
           </div>
           <div

@@ -2,7 +2,7 @@ import React from "react";
 import "./Service.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-function generateSlides(length = 10) {
+function generateSlides(length = 6) {
   return Array.from({ length }).map((value, index) => {
     index = index;
 

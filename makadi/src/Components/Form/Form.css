@@ -101,7 +101,8 @@ input[type=number] {
 
 @media (max-width:786px) {
     .booking__form__img__text {
-        top: -50%;
+        top: -14%;
+        right: 6%;
     }
     .toast {
         width: 50% !important;

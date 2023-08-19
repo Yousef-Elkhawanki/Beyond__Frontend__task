@@ -1,0 +1,47 @@
+.home {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #21436E 85.42%), linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%), url(src/assets/banner.png), lightgray 50% / cover no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.home .row {
+    padding-top:38.5rem ;
+    padding-bottom: 4rem;
+
+
+}
+
+.home__text__content h2{
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.2 !important;
+}
+.home__text__content h4 {
+    font-size: 4.5rem;
+}
+
+.home__text__Description p {
+    line-height: 1.8rem;
+}
+
+.home__text__btns button {
+    border: var(--border);
+    background: var(--white);
+    padding: .5rem 1.5rem;
+    margin-right: 1rem;
+    color: var(--primary);
+}
+
+@media (max-width:426px) {
+    html {
+        font-size: 80%;
+    }
+}
+@media (max-width:376px) {
+    html {
+        font-size: 70%;
+    }
+    .home__text__btns button {
+        margin-bottom: 1rem;
+    }
+}

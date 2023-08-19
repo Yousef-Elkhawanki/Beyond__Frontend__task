@@ -118,6 +118,8 @@ align-items: flex-end;
     height: 40px;
 }
 
+
+
 @media (max-width:768px) {
     .navbar__menu {
         gap: .5rem;
@@ -129,7 +131,7 @@ align-items: flex-end;
         flex-wrap: nowrap !important;
     }
     .navbar__menu__barIcon__bar {
-    width: 41%;
+    width: 30%;
     margin-left: 0;
     justify-content: flex-end;
 }
@@ -146,7 +148,7 @@ align-items: flex-end;
     stroke: var(--primary);
 }
 .custome__menu .navbar__menu__weather svg{
-    left: 30%;
+    left: 17%;
 }
 
 }

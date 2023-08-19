@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import "./Navbar.css";
 import { useQuery } from "react-query";
@@ -22,11 +22,7 @@ export const Navbar = ({ toggleNavbar }) => {
     >
       <div className="container d-flex justify-content-between align-items-centers">
         <div className="navbar__logo" style={{ width: "8rem" }}>
-          <img
-            className="w-100"
-            src="https://s3-alpha-sig.figma.com/img/083f/f3f4/e713f523170cefa48dd9d6070f8b1386?Expires=1691971200&Signature=QeTrTqjUG5~Txs3kmQQ~T29lNooS~md67l1K5LrDcNY2K6hY6YHyrZqa3TTVHBAXBOZqF19-AWMO7IxYF1UcVBCSjhPp8V~YhXqDAKd3OEXkTHSc99kEKJG88yMUcFPn~XvcSrKnXoQPYanjyB6Bz-5Fq4Vtt4OdguaXqyKdJ2R9la0lIt72UA1p7nOfOJ8QVErMuBaDZKEvutIDXLLp2gSVKgG-vQ1mtWNcdkX1BklKjaI~IFIfSyW--JKpe1-By~QMmi~Uv8MKiKpfW1nPhS-~Yj22bAUCmOCYOsLITrS0gNYhWsHnZQST7McFkGnsAL3vo54FxVK~g3t16ojSpg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            alt=""
-          />
+          <img className="w-100" src="src/assets/logo.png" alt="" />
         </div>
         <ul className="navbar__menu d-flex align-items-center">
           <li className="navbar__menu__weather d-flex align-items-center">

@@ -1,0 +1,124 @@
+.error {
+    color: red;
+    display: block;
+}
+.form__group{
+    margin-bottom: 1rem;
+}
+.form__group input ,.form__group select{
+    width: 100%;
+    padding: .4rem .2rem;
+    border: 0;
+    border-bottom: .1rem solid rgba(100, 100, 100 , .3);
+    height: 4.5rem;
+    background: transparent;
+    margin-bottom: 1.5rem;
+}
+
+.form__group input:focus ,.form__group select:focus{
+    outline: 0;
+    border: 0;
+    border-bottom: .1rem solid rgba(100, 100, 100 , .3);
+}
+
+option {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    min-height: 2rem;
+    color: var(--primary);
+    white-space-collapse: collapse;
+
+}
+
+option:hover {
+    background: var(--primary) !important;
+    color: var(--white);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.bookNow {
+    background: rgba(237, 237, 237, 0.50);
+}
+.bookNow__header {
+    width: 70%;
+    margin-bottom: 2rem;
+}
+.bookNow__header p {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+.bookNow .row {
+    gap: 2rem;
+}
+
+.bookNow .image {
+    background: url(src/assets/form.png) no-repeat  ;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5rem;
+}
+.image__text {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    color: var(--primary);
+}
+.image__text h2 {
+    margin: 0 2rem;
+}
+.image__text h4 {
+    font-size: 1.8rem;
+}
+.submit__btn{
+    background: var(--primary);
+    color: var(--white);
+    padding: .6rem 1.5rem;
+    font-size: .8rem;
+    font-weight: lighter;
+    border: .1rem solid var(--primary);
+    margin-top: 1.5rem;
+}
+
+
+
+@media (max-width:1440px) {
+    .container-sm {
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+    .image__text h2 {
+        font-size: 4rem;
+        
+    }
+}
+
+@media (max-width:1024px) {
+    .bookNow .image {
+        padding: 0 3rem;
+    }
+    .image__text {
+        padding: 0 21rem;
+    }
+}
+@media  (max-width:768px) {
+    .container-sm {
+        max-width: 960px !important;
+        margin: auto !important;
+    }
+    .bookNow .image {
+        height: 100vh;
+    }
+    .image__text{
+        padding: 0;
+    }
+}

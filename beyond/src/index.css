@@ -1,0 +1,40 @@
+:root {
+    --headers-fonts: "Diodrum Arabic";
+    --primary:#21436E;
+    --border: 1px solid #21436E;
+    --white:#fff;
+}
+
+@font-face {
+    font-family:"Diodrum Arabic" ;
+    src: url(src/assets/fonts/DiodrumArabic-Regular.ttf);
+    
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--headers-fonts);
+    font-weight: 600 !important;
+    font-style: normal;
+    line-height: .5 !important;
+}
+li {
+    list-style: none;
+}
+
+.isLoading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 150;
+    background: var(--primary);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 4rem;
+    color: var(--white);
+}

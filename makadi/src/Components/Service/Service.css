@@ -27,6 +27,7 @@
 .service__header h5 
 {
     font-size: 2rem;
+    line-height: .5;
 }
 .service__header h3 
 {
@@ -63,12 +64,40 @@
 }
 .wrapper img {
     width: 100%;
-    height: 590px;
+    height: 850px;
     object-fit: cover;
+}
+.splide__pagination li {
+    margin: .5rem !important;
+}
+
+@media (max-width:1440px) {
+    .service__header h5 {
+        font-size: 4rem;
+        
+    }
+    .service__header h3 {
+        font-size: 7rem;
+    }
 }
 
 @media (max-width:768px) {
+    .service__header h5 {
+        font-size: 2.8rem;
+    }
+    .service__header h3 {
+        font-size: 5rem;
+    }
     .services__items{
         margin-bottom: var(--spacing);
+    }
+}
+
+@media (max-width:426px){
+    .service__header h5 {
+        font-size: 2.2rem;
+    }
+    .service__header h3 {
+        font-size: 4rem;
     }
 }

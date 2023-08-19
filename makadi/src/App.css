@@ -63,6 +63,9 @@ display: flex;
 
 
 @media (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
     .isLoading h1 {
         font-size: 6rem;
     }
