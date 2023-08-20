@@ -2,20 +2,8 @@ import { Form, Formik } from "formik";
 import * as Yup from "yup";
 import React from "react";
 import { FormikControl } from "./FormikControl";
-import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer, toast } from "react-toastify";
-const notify = (name) => {
-  toast.success(`Thank You, ${name} we'll be in Contact With You Soon.`, {
-    position: "top-center",
-    autoClose: 2000,
-    hideProgressBar: false,
-    closeOnClick: false,
-    pauseOnHover: false,
-    draggable: false,
-    progress: undefined,
-    theme: "light",
-  });
-};
+import swal from "sweetalert";
+
 export const FormikContainer = () => {
   const selectDropDown = [
     { key: "Choose Your Bugdet", value: "Choose Your Bugdet" },
@@ -32,8 +20,7 @@ export const FormikContainer = () => {
     message: "",
   };
   const onSubmit = (values) => {
-    notify(values.name);
-    console.log(values);
+    swal("Thanks!", `${values.name}`, "success");
   };
   const validationSchema = Yup.object({
     name: Yup.string().min(3).max(20).required("Required"),
@@ -45,18 +32,6 @@ export const FormikContainer = () => {
 
   return (
     <div className="form__container">
-      <ToastContainer
-        position="top-center"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick={false}
-        rtl={false}
-        pauseOnFocusLoss={false}
-        draggable={false}
-        pauseOnHover={false}
-        theme="light"
-      />
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
@@ -83,7 +58,7 @@ export const FormikContainer = () => {
               placeholder="Phone"
             />
             <div className="form__group">
-              <select name="selectOptions" id="selectOptions" >
+              <select name="selectOptions" id="selectOptions">
                 {selectDropDown.map((option) => {
                   return (
                     <option key={option.key} value={option.key}>

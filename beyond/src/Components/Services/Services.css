@@ -78,6 +78,20 @@
     .service__header h3 {
         font-size: 3.3rem;
     }
+
+    .active_item h4  {
+        color: #2b4c75 !important;
+    }
+    .active_item svg path {
+        fill: #2b4c75;
+    }
+
+    .deactive_item h4 {
+        color: var(--primary);
+    }
+    .deactive_item svg path  {
+        fill: var(--primary);
+    }
 @media (max-width:1440px) {
     
     .service__header h2 {
