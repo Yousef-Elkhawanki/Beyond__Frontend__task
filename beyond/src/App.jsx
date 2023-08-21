@@ -6,7 +6,6 @@ import { Navbar } from "./Components/Navbar/Navbar";
 import { QueryClient, QueryClientProvider } from "react-query";
 import "./index.css";
 import $ from "jquery";
-import { BrowserRouter } from "react-router-dom";
 export const App = () => {
   useEffect(() => {
     $(window).ready(() => {
@@ -26,9 +25,7 @@ export const App = () => {
       </QueryClientProvider>
       <main>
         <Home />
-        <BrowserRouter>
         <Services />
-        </BrowserRouter>
         <Form />
       </main>
     </>

@@ -121,6 +121,9 @@ input[type=number] {
     .bookNow .col-md-5 {
         width: 100%;
     }
+    .bookNow .col-md-6 {
+        width: 100%;
+    }
     .image__text h2 {
         font-size: 5rem;
         
