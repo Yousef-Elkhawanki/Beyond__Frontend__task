@@ -33,7 +33,6 @@
 }
 
 .service__item::after{
-    /* width: .1rem; */
     border: .01rem dashed #C4C4C4;
     width: 80%;
     position: absolute;
@@ -42,56 +41,62 @@
     content: "";
     transform: translate(-50%,-50%);
 }
+.service__item:nth-child(5)::after{
+    content: none;
+}
+.service__item:nth-child(6)::after{
+    content: none;
+}
 .service__item h4 {
-    color: var(--primary);
+    color: #268fb4;
     margin: .5rem 0;
 }
 .service__item p {
     color: #757575;
 }
-
-.service__item:nth-of-type(5):after,.service__item:nth-of-type(6):after{
-    content: none;
-}
-
-.splide__pagination {
-    position: static;
-    margin-top: 1rem;
-    gap: .8rem;
-}
-
-.splide__pagination__page {
-    height: 1rem;
-    width: 1rem;
-    opacity: .5;
-}
-
-.splide__pagination__page.is-active {
-    background: #ccc;
-    opacity: 1;
+.service__item path {
+    color: #268fb4;
 
 }
-.service__header h2 {
-        font-size: 6rem;
-        line-height: 1 !important;
-    }
-    .service__header h3 {
-        font-size: 3.3rem;
-    }
 
-    .active_item h4  {
-        color: #2b4c75 !important;
-    }
-    .active_item svg path {
-        fill: #2b4c75;
-    }
 
-    .deactive_item h4 {
-        color: var(--primary);
+
+
+
+
+    .slider-dot{
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.slider-dot.active{
+    background-color: #757575;
+}
+
+.slider-slide{
+    animation: fadeIn 1s;
+    height: 41rem;
+}
+.slider-slide img {
+    object-fit: cover;
+}
+.service__item.active-slide h4{
+    color: var(--primary);
+}
+.service__item.active-slide path {
+    fill: var(--primary);
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
     }
-    .deactive_item svg path  {
-        fill: var(--primary);
+    100%{
+        opacity: 1;
     }
+}
 @media (max-width:1440px) {
     
     .service__header h2 {
@@ -104,6 +109,9 @@
     .service__item h4 {
         font-size: 1.5rem;
         line-height: 2 !important;
+    }
+    .slider-slide {
+        height: 43rem;
     }
 }
 
@@ -136,3 +144,4 @@
     height: 180px;
  }
 }
+
